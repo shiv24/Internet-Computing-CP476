@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <link rel="stylesheet" href="./css/assign1.css">
+  <link rel="stylesheet" href="./css/assign2.css">
+  <script type="text/javascript" src="./js/assign2-2.js"></script>
+</head>
+<body background="images/stucco/stucco_@2X.png">
+<div id = 'main-page'>
+    <ul class="topnav">
+      <li class = 'top' href="#myAccount">My Account</a>
+      <li class = 'top' href="#wishList">Wish List</a>
+      <li class = 'top' href="#shoppingCart">Shopping Cart</a>
+      <li class = 'top' href="#checkout">Checkout</a>
+    </ul>
+
+    <h1 id = 'main-title'>Art Store</h1>
+
+    <ul class="lowerNav">
+      <li class = "lower" href="#home">Home</a>
+      <li class = "lower" href="#aboutUs">About Us</a>
+      <li class = "lower" href="#artWorks">Art Works</a>
+      <li class = "lower" href="#artists">Artists</a>
+    </ul>
+    <div class = "mySecondBox">
+      <form name= "form1" id = "my-form">
+      <h2> Customer Registration </h2>
+      <h3 class = "category"> 1. User info </h3>
+      <hr>
+      <table>
+        <tr colspan="2">
+          <td>
+            First name<br>
+            <input type="text" name="firstname"><br>
+          </td>
+          <td>
+            Last name<br>
+            <input type="text" name="lastname"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Email<br>
+            <input type="text" name="email" placeholder="format for email is xxx@yyy.zzz"><br>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Password<br>
+            <input type="text" name="password" placeholder = "at least 8 characters"><br>
+          </td>
+          <td>
+            Password Repeat<br>
+            <input type="text" name="passwordrepeat" placeholder = "at least 8 characters"><br>
+          </td>
+        </tr>
+      </table>
+
+      <h3 class = "category">2. Location</h3>
+      <hr>
+      <table>
+        <tr>
+          <td>
+            Address<br>
+            <input type="text" name="address"><br>
+          </td>
+        </tr>
+        <tr class = "geographics">
+            <td>
+              City<br>
+              <input type="text" name="city"><br>
+            </td>
+            <td>
+              State<br>
+              <input type="text" name="state"><br>
+            </td>
+            <td>
+              Zip<br>
+              <input type="text" name="zip"><br>
+            </td>
+        </tr>
+        <tr>
+          <td>
+            Phone<br>
+            <input type="text" name="phone" placeholder = "NNN-NNN-NNNN"><br>
+          </td>
+          <td>
+            Country<br>
+            <select>
+            	<option value="AF">Canada</option>
+            	<option value="AX">United States</option>
+            	<option value="AL">Japan</option>
+            </select>
+
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div id = 'radio-button-container'>
+            Continent<br>
+            <input type="radio" name="continent" value ="North America"> North America<br>
+            <input type="radio" name="continent" value ="Europe"> Europe<br>
+            <input type="radio" name="continent" value ="South America"> South America<br>
+          </div>
+
+
+          </td>
+        </tr>
+      </table>
+
+      <h3 class = "category">3. Personal Details</h3>
+      <hr>
+      <table>
+        <tr>
+          <td>
+            Birth Day<br>
+            <input type="text" name="birthday"><br>
+          </td>
+          <td>
+            Favorite Color<br>
+
+            <select class="colors">
+              <option>─────</option>
+              <option>Green</option>
+              <option>Blue</option>
+              <option>Red</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Interest in Art<br>
+            <label for="artlove">Minimal</label>
+            <input type="range" min="Minimal" max="Love it!" name = 'artlove'>
+            <label for="artlove">Love it!</label>
+          </td>
+        </tr>
+      </table>
+
+      <h3 class = "category">4. All Done</h3>
+      <hr>
+      <table>
+        <tr>
+          <div id = "termConfirm">
+          <input type="checkbox" name="agreement" value="agree"> I agree to the <a href = "#">Terms of the Site</a><br>
+        </div>
+        </tr>
+        <tr>
+          <button type="submit" id="submit-button">
+            Sign me up!
+          </button>
+        </tr>
+      </table>
+    </form>
+    </div>
+    <div id = 'footer'>
+      <p id = 'copyright'> All images are copyright to their owners. This is just a hypothetical site &copy 2014 Copyright Art Store </p>
+    </div>
+</div>
+
+
+</body>
+</html>
